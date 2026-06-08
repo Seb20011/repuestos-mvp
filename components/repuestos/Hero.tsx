@@ -1,5 +1,6 @@
 import { Database } from "lucide-react";
 import { VehicleSelector } from "@/components/repuestos/VehicleSelector";
+import { HeroMechanicalBackground } from "@/components/repuestos/HeroMechanicalBackground";
 
 type HeroProps = {
   brand: string;
@@ -23,9 +24,11 @@ export function Hero({
   setEngine,
 }: HeroProps) {
   return (
-    <section className="bg-slate-950 text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
-        <div>
+    <section className="relative overflow-hidden bg-slate-950 text-white md:min-h-[108vh]">
+      <HeroMechanicalBackground />
+
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 py-16 md:sticky md:top-0 md:min-h-screen md:grid-cols-2 md:items-center md:py-20">
+        <div className="self-center">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm">
             <Database className="h-4 w-4" />
             Catálogo compatible por vehículo
@@ -36,9 +39,8 @@ export function Hero({
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Prototipo de tienda online para vender repuestos en Ecuador. El
-            cliente filtra su vehículo, revisa piezas compatibles y cotiza
-            directo por WhatsApp.
+            Busca repuestos compatibles con tu vehículo, revisa opciones
+            disponibles y cotiza directamente por WhatsApp.
           </p>
         </div>
 

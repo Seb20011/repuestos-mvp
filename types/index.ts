@@ -6,6 +6,7 @@ export type Product = {
   stock: string;
   price: string;
   brand: string;
+  imageUrl?: string;
 };
 
 export type Vehicle = {

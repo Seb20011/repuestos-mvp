@@ -18,6 +18,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Imágenes de productos
+
+Guarda las imágenes reales y referenciales en `public/repuestos/`. En `imageUrl` usa rutas públicas como `/repuestos/nombre.webp`; no uses `public/repuestos/nombre.webp` como ruta.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

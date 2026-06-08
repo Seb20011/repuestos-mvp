@@ -1,20 +1,8 @@
-type Product = {
-  name: string;
-  sku: string;
-  category: string;
-  price: string;
-};
+import type { Product, Vehicle } from "@/types";
 
-type Vehicle = {
-  brand: string;
-  model: string;
-  year: string;
-  engine: string;
-};
+export const WHATSAPP_PHONE = "593968370301";
 
 export function createWhatsAppLink(product: Product, vehicle: Vehicle) {
-  const phone = "593999999999";
-
   const message = `
 Hola, quiero consultar este repuesto:
 
@@ -29,5 +17,22 @@ ${vehicle.brand} ${vehicle.model} ${vehicle.year} ${vehicle.engine}
 ¿Me confirma disponibilidad, marca y precio final?
 `.trim();
 
-  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+}
+
+export function createPhotoConfirmationWhatsAppLink(
+  product: Product,
+  vehicle: Vehicle
+) {
+  const message = `
+Hola, quiero confirmar este repuesto. Puedo enviar foto de la pieza o datos del vehículo.
+
+Producto: ${product.name}
+SKU: ${product.sku}
+
+Vehículo:
+${vehicle.brand} ${vehicle.model} ${vehicle.year} ${vehicle.engine}
+`.trim();
+
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
 }

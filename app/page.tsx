@@ -1,16 +1,35 @@
 "use client";
 
-
 import { useMemo, useState } from "react";
-import { Filter, Search } from "lucide-react";
 
 import { catalog } from "@/data/parts";
-import { ProductCard } from "@/components/repuestos/ProductCard";
+import { CatalogSection } from "@/components/repuestos/CatalogSection";
 import { Header } from "@/components/repuestos/Header";
 import { Hero } from "@/components/repuestos/Hero";
+import { HowToBuy } from "@/components/repuestos/HowToBuy";
 import { TrustCards } from "@/components/repuestos/TrustCards";
+import { WorkshopCTA } from "@/components/repuestos/WorkshopCTA";
+import { Footer } from "@/components/repuestos/Footer";
 
-const categories = ["Todas", ...Array.from(new Set(catalog.map((p) => p.category)))];
+const categories = [
+  "Todas",
+  ...Array.from(new Set(catalog.map((p) => p.category))),
+];
+
+const stockOptions = [
+  "Todos",
+  "Disponible para cotización",
+  "Bajo pedido 24–48h",
+  "Confirmar stock",
+];
+
+const brandOptions = [
+  "Todas",
+  "Económico",
+  "Alternativo",
+  "OEM equivalente",
+  "Premium",
+];
 
 export default function HomePage() {
   const [brand, setBrand] = useState("Chevrolet");
@@ -19,18 +38,28 @@ export default function HomePage() {
   const [engine, setEngine] = useState("1.4");
   const [category, setCategory] = useState("Todas");
   const [query, setQuery] = useState("");
+  const [stockFilter, setStockFilter] = useState("Todos");
+  const [brandFilter, setBrandFilter] = useState("Todas");
 
   const filtered = useMemo(() => {
     return catalog.filter((item) => {
+      const normalizedQuery = query.trim().toLowerCase();
       const matchesQuery =
-        item.name.toLowerCase().includes(query.toLowerCase()) ||
-        item.category.toLowerCase().includes(query.toLowerCase());
+        normalizedQuery.length === 0 ||
+        item.name.toLowerCase().includes(normalizedQuery) ||
+        item.category.toLowerCase().includes(normalizedQuery) ||
+        item.sku.toLowerCase().includes(normalizedQuery) ||
+        item.brand.toLowerCase().includes(normalizedQuery);
 
       const matchesCategory = category === "Todas" || item.category === category;
+      const matchesStock =
+        stockFilter === "Todos" || item.stock === stockFilter;
+      const matchesBrand =
+        brandFilter === "Todas" || item.brand === brandFilter;
 
-      return matchesQuery && matchesCategory;
+      return matchesQuery && matchesCategory && matchesStock && matchesBrand;
     });
-  }, [query, category]);
+  }, [query, category, stockFilter, brandFilter]);
 
   const selectedVehicle = {
     brand,
@@ -55,59 +84,27 @@ export default function HomePage() {
 
       <TrustCards />
 
-      <section className="mx-auto max-w-7xl px-4 py-10">
-        <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-          <div>
-            <p className="mb-2 text-sm font-bold uppercase tracking-widest text-emerald-600">
-              Catálogo inicial
-            </p>
-            <h2 className="text-3xl font-black tracking-tight md:text-4xl">
-              60 repuestos de alta rotación
-            </h2>
-            <p className="mt-3 max-w-2xl text-slate-500">
-              Este prototipo usa tu listado inicial y lo organiza por categorías
-              para poder vender y validar demanda.
-            </p>
-          </div>
+      <HowToBuy />
 
-          <div className="flex items-center gap-2 rounded-2xl bg-white p-2 shadow-sm">
-            <Search className="ml-2 h-5 w-5 text-slate-400" />
-            <input
-              className="w-full border-0 bg-transparent px-2 py-2 outline-none"
-              placeholder="Buscar sensor, filtro, freno..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-          </div>
-        </div>
+      <CatalogSection
+        filtered={filtered}
+        categories={categories}
+        stockOptions={stockOptions}
+        brandOptions={brandOptions}
+        selectedCategory={category}
+        selectedStock={stockFilter}
+        selectedBrand={brandFilter}
+        query={query}
+        vehicle={selectedVehicle}
+        setQuery={setQuery}
+        setCategory={setCategory}
+        setStockFilter={setStockFilter}
+        setBrandFilter={setBrandFilter}
+      />
 
-        <div className="mb-7 flex gap-2 overflow-x-auto pb-2">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setCategory(cat)}
-              className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-bold transition ${category === cat
-                ? "bg-slate-900 text-white"
-                : "bg-white text-slate-600 shadow-sm hover:bg-slate-100"
-                }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+      <WorkshopCTA />
 
-        <div className="mb-5 flex items-center gap-2 text-sm text-slate-500">
-          <Filter className="h-4 w-4" />
-          Mostrando {filtered.length} productos para {brand} {model} {year}{" "}
-          {engine}
-        </div>
-
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((part) => (
-            <ProductCard key={part.id} part={part} vehicle={selectedVehicle} />
-          ))}
-        </div>
-      </section>
+      <Footer />
     </main>
   );
 }

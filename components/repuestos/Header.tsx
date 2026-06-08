@@ -1,4 +1,12 @@
 import { Wrench } from "lucide-react";
+import { WHATSAPP_PHONE } from "@/lib/whatsapp";
+
+const navItems = [
+  { label: "Inicio", href: "/" },
+  { label: "Cómo comprar", href: "/#como-comprar" },
+  { label: "Catálogo", href: "/#catalogo" },
+  { label: "Talleres", href: "/#talleres" },
+];
 
 export function Header() {
   return (
@@ -10,17 +18,26 @@ export function Header() {
           </div>
 
           <div>
-            <p className="text-lg font-black">Prototipo Repuestos</p>
+            <p className="text-lg font-black">Catálogo de Repuestos Online</p>
             <p className="text-xs text-slate-500">
               Buscador automotriz para Ecuador
             </p>
           </div>
         </div>
 
+        <nav className="hidden items-center gap-6 text-sm font-bold text-slate-600 lg:flex">
+          {navItems.map((item) => (
+            <a key={item.href} href={item.href} className="hover:text-slate-900">
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
         <a
-          href="https://wa.me/593999999999"
+          href={`https://wa.me/${WHATSAPP_PHONE}`}
           target="_blank"
-          className="rounded-2xl bg-emerald-600 px-4 py-2 font-bold text-white"
+          rel="noreferrer"
+          className="rounded-2xl bg-emerald-600 px-4 py-2 font-bold text-white transition hover:bg-emerald-700"
         >
           WhatsApp
         </a>

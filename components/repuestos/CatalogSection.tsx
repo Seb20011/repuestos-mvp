@@ -5,24 +5,36 @@ import type { Product, Vehicle } from "@/types";
 type CatalogSectionProps = {
   filtered: Product[];
   categories: string[];
+  stockOptions: string[];
+  brandOptions: string[];
   selectedCategory: string;
+  selectedStock: string;
+  selectedBrand: string;
   query: string;
   vehicle: Vehicle;
   setQuery: (value: string) => void;
   setCategory: (value: string) => void;
+  setStockFilter: (value: string) => void;
+  setBrandFilter: (value: string) => void;
 };
 
 export function CatalogSection({
   filtered,
   categories,
+  stockOptions,
+  brandOptions,
   selectedCategory,
+  selectedStock,
+  selectedBrand,
   query,
   vehicle,
   setQuery,
   setCategory,
+  setStockFilter,
+  setBrandFilter,
 }: CatalogSectionProps) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-10">
+    <section id="catalogo" className="mx-auto max-w-7xl px-4 py-12">
       <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
         <div>
           <p className="mb-2 text-sm font-bold uppercase tracking-widest text-emerald-600">
@@ -34,11 +46,13 @@ export function CatalogSection({
           </h2>
 
           <p className="mt-3 max-w-2xl text-slate-500">
-            Este prototipo usa tu listado inicial y lo organiza por categorías
-            para poder vender y validar demanda.
+            Listado inicial organizado por categorías para encontrar, comparar
+            y cotizar repuestos de forma rápida.
           </p>
         </div>
+      </div>
 
+      <div className="mb-6 grid gap-3 md:grid-cols-[minmax(0,1.4fr)_minmax(180px,0.8fr)_minmax(180px,0.8fr)]">
         <div className="flex items-center gap-2 rounded-2xl bg-white p-2 shadow-sm">
           <Search className="ml-2 h-5 w-5 text-slate-400" />
           <input
@@ -48,6 +62,40 @@ export function CatalogSection({
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>
+
+        <label className="rounded-2xl bg-white px-4 py-3 shadow-sm">
+          <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+            Disponibilidad
+          </span>
+          <select
+            className="mt-1 w-full bg-transparent text-sm font-bold text-slate-700 outline-none"
+            value={selectedStock}
+            onChange={(event) => setStockFilter(event.target.value)}
+          >
+            {stockOptions.map((stock) => (
+              <option key={stock} value={stock}>
+                {stock}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="rounded-2xl bg-white px-4 py-3 shadow-sm">
+          <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+            Tipo de marca
+          </span>
+          <select
+            className="mt-1 w-full bg-transparent text-sm font-bold text-slate-700 outline-none"
+            value={selectedBrand}
+            onChange={(event) => setBrandFilter(event.target.value)}
+          >
+            {brandOptions.map((brand) => (
+              <option key={brand} value={brand}>
+                {brand}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
 
       <div className="mb-7 flex gap-2 overflow-x-auto pb-2">
@@ -73,9 +121,16 @@ export function CatalogSection({
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((part) => (
-          <ProductCard key={part.id} part={part} vehicle={vehicle} />
-        ))}
+        {filtered.length > 0 ? (
+          filtered.map((part) => (
+            <ProductCard key={part.id} part={part} vehicle={vehicle} />
+          ))
+        ) : (
+          <div className="rounded-3xl bg-white p-6 text-sm leading-6 text-slate-500 shadow-sm md:col-span-2 lg:col-span-3">
+            No encontramos productos con esos filtros. Prueba otra categoría,
+            disponibilidad o tipo de marca.
+          </div>
+        )}
       </div>
     </section>
   );
