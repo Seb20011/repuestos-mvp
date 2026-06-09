@@ -202,6 +202,37 @@ export default async function ProductPage({ params }: ProductPageProps) {
               marca, stock y compatibilidad por WhatsApp.
             </div>
 
+            <section className="mt-4 rounded-2xl bg-white/10 p-4">
+              <h2 className="font-black">Métodos de pago</h2>
+              <p className="mt-2 text-sm leading-6 text-slate-300">
+                Después de confirmar compatibilidad, disponibilidad y precio,
+                recibirás un enlace seguro para completar el pago.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {[
+                  "Tarjeta de crédito o débito",
+                  "Transferencia",
+                  "Enlace de pago",
+                ].map((method) => (
+                  <span
+                    key={method}
+                    className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-slate-100"
+                  >
+                    {method}
+                  </span>
+                ))}
+              </div>
+
+              <button
+                type="button"
+                disabled
+                className="mt-4 w-full rounded-2xl bg-white/10 px-5 py-3 text-sm font-bold text-slate-300 opacity-80"
+              >
+                Pago disponible después de confirmar
+              </button>
+            </section>
+
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               <a
                 href={whatsappLink}

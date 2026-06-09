@@ -1,4 +1,6 @@
 import { Car } from "lucide-react";
+import { engines, modelsByBrand, vehicleBrands, years } from "@/data/vehicles";
+import { cn } from "@/lib/utils";
 
 type VehicleSelectorProps = {
   brand: string;
@@ -9,33 +11,8 @@ type VehicleSelectorProps = {
   setModel: (value: string) => void;
   setYear: (value: string) => void;
   setEngine: (value: string) => void;
+  className?: string;
 };
-
-const vehicleBrands = ["Chevrolet", "Toyota", "Kia", "Hyundai", "Nissan", "Mazda"];
-
-const modelsByBrand: Record<string, string[]> = {
-  Chevrolet: ["Sail", "Aveo", "D-Max", "Spark", "Grand Vitara", "Tracker"],
-  Toyota: ["Hilux", "Fortuner", "Corolla", "Yaris", "RAV4"],
-  Kia: ["Rio", "Sportage", "Picanto", "Cerato"],
-  Hyundai: ["Tucson", "Accent", "Elantra", "Santa Fe"],
-  Nissan: ["Frontier", "Sentra", "X-Trail", "Versa"],
-  Mazda: ["BT-50", "Mazda 3", "CX-5", "Mazda 2"],
-};
-
-const years = Array.from({ length: 23 }, (_, i) => String(2026 - i));
-
-const engines = [
-  "1.0",
-  "1.2",
-  "1.4",
-  "1.5",
-  "1.6",
-  "1.8",
-  "2.0",
-  "2.4",
-  "2.5 Diesel",
-  "2.8 Diesel",
-];
 
 export function VehicleSelector({
   brand,
@@ -46,9 +23,15 @@ export function VehicleSelector({
   setModel,
   setYear,
   setEngine,
+  className,
 }: VehicleSelectorProps) {
   return (
-    <div className="rounded-3xl bg-white p-6 text-slate-900 shadow-2xl">
+    <div
+      className={cn(
+        "rounded-3xl bg-white p-6 text-slate-900 shadow-2xl",
+        className
+      )}
+    >
       <div className="mb-5 flex items-center gap-3">
         <div className="rounded-2xl bg-slate-100 p-3">
           <Car className="h-6 w-6" />
@@ -70,7 +53,7 @@ export function VehicleSelector({
             value={brand}
             onChange={(e) => {
               setBrand(e.target.value);
-              setModel(modelsByBrand[e.target.value][0]);
+              setModel(modelsByBrand[e.target.value]?.[0] ?? "");
             }}
           >
             {vehicleBrands.map((b) => (
@@ -86,7 +69,7 @@ export function VehicleSelector({
             value={model}
             onChange={(e) => setModel(e.target.value)}
           >
-            {modelsByBrand[brand].map((m) => (
+            {(modelsByBrand[brand] ?? []).map((m) => (
               <option key={m}>{m}</option>
             ))}
           </select>
