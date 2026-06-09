@@ -7,7 +7,6 @@ import { CatalogSection } from "@/components/repuestos/CatalogSection";
 import { Header } from "@/components/repuestos/Header";
 import { Hero } from "@/components/repuestos/Hero";
 import { HowToBuy } from "@/components/repuestos/HowToBuy";
-import { TrustCards } from "@/components/repuestos/TrustCards";
 import { WorkshopCTA } from "@/components/repuestos/WorkshopCTA";
 import { Footer } from "@/components/repuestos/Footer";
 
@@ -81,8 +80,6 @@ export default function HomePage() {
         setYear={setYear}
         setEngine={setEngine}
       />
-
-      <TrustCards />
 
       <HowToBuy />
 

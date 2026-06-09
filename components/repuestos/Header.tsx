@@ -1,5 +1,4 @@
 import { Wrench } from "lucide-react";
-import { WHATSAPP_PHONE } from "@/lib/whatsapp";
 
 const navItems = [
   { label: "Inicio", href: "/" },
@@ -32,15 +31,6 @@ export function Header() {
             </a>
           ))}
         </nav>
-
-        <a
-          href={`https://wa.me/${WHATSAPP_PHONE}`}
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-2xl bg-emerald-600 px-4 py-2 font-bold text-white transition hover:bg-emerald-700"
-        >
-          WhatsApp
-        </a>
       </div>
     </header>
   );
