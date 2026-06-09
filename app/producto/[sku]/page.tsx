@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Camera, MessageCircle, ShieldCheck, Tag } from "lucide-react";
 
+import { ProductPurchasePanel } from "@/components/cart/ProductPurchasePanel";
 import { Header } from "@/components/repuestos/Header";
 import { Footer } from "@/components/repuestos/Footer";
 import { catalog } from "@/data/parts";
@@ -72,6 +73,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   );
   const imageSrc =
     product.imageUrl || getFallbackImageByCategory(product.category);
+  const directPurchaseAvailable = product.directPurchase === true;
   const productSections = [
     {
       title: "Descripción",
@@ -198,9 +200,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
             <div className="mt-4 flex items-start gap-3 rounded-2xl bg-white/10 p-4 text-sm leading-6 text-slate-300">
               <Tag className="mt-0.5 h-5 w-5 shrink-0 text-emerald-300" />
-              Los precios y disponibilidad son referenciales. Te confirmamos
-              marca, stock y compatibilidad por WhatsApp.
+              {directPurchaseAvailable
+                ? "Compra directa disponible para esta referencia. Verifica que el vehículo seleccionado coincida con la compatibilidad indicada."
+                : "Este producto requiere confirmación de compatibilidad antes del pago."}
             </div>
+
+            {directPurchaseAvailable && (
+              <ProductPurchasePanel product={product} />
+            )}
 
             <section className="mt-4 rounded-2xl bg-white/10 p-4">
               <h2 className="font-black">Métodos de pago</h2>
@@ -234,25 +241,29 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </section>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-5 py-3 font-bold text-white transition hover:bg-emerald-700"
-              >
-                <MessageCircle className="h-5 w-5" />
-                Consultar por WhatsApp
-              </a>
+              {!directPurchaseAvailable && (
+                <>
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-5 py-3 font-bold text-white transition hover:bg-emerald-700"
+                  >
+                    <MessageCircle className="h-5 w-5" />
+                    Consultar por WhatsApp
+                  </a>
 
-              <a
-                href={photoConfirmationLink}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-5 py-3 font-bold text-white transition hover:bg-white/15"
-              >
-                <Camera className="h-5 w-5" />
-                Enviar foto para confirmar
-              </a>
+                  <a
+                    href={photoConfirmationLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-5 py-3 font-bold text-white transition hover:bg-white/15"
+                  >
+                    <Camera className="h-5 w-5" />
+                    Enviar foto para confirmar
+                  </a>
+                </>
+              )}
 
               <Link
                 href="/"

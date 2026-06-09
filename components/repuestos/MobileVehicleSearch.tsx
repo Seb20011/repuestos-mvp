@@ -47,10 +47,6 @@ export function MobileVehicleSearch({
     ? `${brand} ${model} · ${year} · ${engine}`
     : "";
   const availableModels = modelsByBrand[brand] ?? [];
-  const heroTriggerLabel = hasVehicle
-    ? "Cambiar vehículo"
-    : "Seleccionar vehículo";
-
   const handleBrandChange = (value: string) => {
     setBrand(value);
     setModel(modelsByBrand[value]?.[0] ?? "");
@@ -67,38 +63,41 @@ export function MobileVehicleSearch({
     <Sheet>
       <div
         className={cn(
-          variant === "hero" &&
-            "rounded-2xl border border-white/10 bg-white/10 p-3 shadow-xl backdrop-blur",
+          "w-full max-w-[calc(100vw-2rem)] box-border",
           className
         )}
       >
-        <SheetTrigger asChild>
-          {variant === "hero" ? (
-            <Button className="h-12 w-full rounded-2xl bg-emerald-600 px-4 text-base font-bold text-white hover:bg-emerald-700">
-              <Search className="h-5 w-5" />
-              {heroTriggerLabel}
-            </Button>
-          ) : (
+        {variant === "hero" ? (
+          <div className="w-full max-w-full box-border rounded-2xl border border-white/15 bg-white/10 p-2 backdrop-blur">
+            <SheetTrigger asChild>
+              <Button className="h-11 w-full rounded-xl bg-emerald-600 px-4 text-sm font-black text-white hover:bg-emerald-700">
+                <Search className="h-4 w-4" />
+                {hasVehicle ? "Cambiar vehículo" : "Seleccionar vehículo"}
+              </Button>
+            </SheetTrigger>
+
+            {hasVehicle && (
+              <p className="mt-2 truncate text-center text-sm font-bold text-slate-200">
+                {currentVehicle}
+              </p>
+            )}
+          </div>
+        ) : (
+          <SheetTrigger asChild>
             <Button
               variant="outline"
-              className="h-9 rounded-2xl border-slate-200 bg-white px-3 text-sm font-bold text-slate-700 shadow-sm hover:bg-slate-50"
+              className="h-9 rounded-xl border-slate-200 bg-white px-3 text-sm font-bold text-slate-700 hover:bg-slate-50"
             >
               {triggerLabel !== "Cambiar" && <Car className="h-4 w-4" />}
               {triggerLabel}
             </Button>
-          )}
-        </SheetTrigger>
-
-        {variant === "hero" && hasVehicle && (
-          <p className="mt-3 text-center text-sm font-bold text-slate-200">
-            {currentVehicle}
-          </p>
+          </SheetTrigger>
         )}
       </div>
 
       <SheetContent
         side="bottom"
-        className="max-h-[90vh] overflow-y-auto rounded-t-3xl border-slate-200 bg-white p-0 text-slate-900"
+        className="max-h-[90vh] overflow-y-auto rounded-t-2xl border-slate-200 bg-white p-0 text-slate-900"
       >
         <SheetHeader className="px-5 pb-2 pt-5 text-left">
           <SheetTitle className="text-xl font-black">
@@ -113,7 +112,7 @@ export function MobileVehicleSearch({
           <div>
             <label className="mb-2 block text-sm font-bold">Marca</label>
             <select
-              className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
+              className="w-full rounded-xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
               value={brand}
               onChange={(event) => handleBrandChange(event.target.value)}
             >
@@ -126,7 +125,7 @@ export function MobileVehicleSearch({
           <div>
             <label className="mb-2 block text-sm font-bold">Modelo</label>
             <select
-              className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
+              className="w-full rounded-xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
               value={model}
               onChange={(event) => setModel(event.target.value)}
             >
@@ -140,7 +139,7 @@ export function MobileVehicleSearch({
             <div>
               <label className="mb-2 block text-sm font-bold">Año</label>
               <select
-                className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
+                className="w-full rounded-xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
                 value={year}
                 onChange={(event) => setYear(event.target.value)}
               >
@@ -153,7 +152,7 @@ export function MobileVehicleSearch({
             <div>
               <label className="mb-2 block text-sm font-bold">Motor</label>
               <select
-                className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
+                className="w-full rounded-xl border border-slate-200 bg-white p-3 text-slate-900 outline-none focus:border-emerald-500"
                 value={engine}
                 onChange={(event) => setEngine(event.target.value)}
               >
@@ -164,13 +163,13 @@ export function MobileVehicleSearch({
             </div>
           </div>
 
-          <div className="rounded-2xl bg-slate-100 p-4 text-sm text-slate-600">
+          <div className="rounded-xl bg-slate-100 p-3 text-sm text-slate-600">
             Vehículo actual: <strong>{currentVehicle}</strong>
           </div>
 
           <SheetClose asChild>
             <Button
-              className="h-12 rounded-2xl bg-emerald-600 text-base font-bold text-white hover:bg-emerald-700"
+              className="h-11 rounded-xl bg-emerald-600 text-base font-bold text-white hover:bg-emerald-700"
               onClick={handleApply}
             >
               Aplicar vehículo

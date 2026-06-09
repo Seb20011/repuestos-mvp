@@ -1,3 +1,5 @@
+import type { Product } from "@/types";
+
 export const parts = [
   "FILTRO DE ACEITE",
   "FILTRO DE AIRE",
@@ -221,28 +223,73 @@ export function categorizePart(name: string) {
   return "Otros";
 }
 
-export const catalog = parts.map((name, index) => ({
-  id: index + 1,
-  name: formatPartName(name),
-  category: categorizePart(name),
-  sku: `REP-${String(index + 1).padStart(4, "0")}`,
-  stock:
+const directPurchaseConfig: Record<
+  string,
+  {
+    priceCents: number;
+    shippingWeightKg: number;
+  }
+> = {
+  "Filtro de aceite": {
+    priceCents: 850,
+    shippingWeightKg: 0.35,
+  },
+  "Filtro de aire": {
+    priceCents: 975,
+    shippingWeightKg: 0.45,
+  },
+  "Filtro de combustible": {
+    priceCents: 1150,
+    shippingWeightKg: 0.3,
+  },
+  "Filtro de cabina / A/C": {
+    priceCents: 1250,
+    shippingWeightKg: 0.25,
+  },
+  Bujías: {
+    priceCents: 1500,
+    shippingWeightKg: 0.4,
+  },
+};
+
+function formatPriceFromCents(priceCents: number) {
+  return `$${(priceCents / 100).toFixed(2)}`;
+}
+
+export const catalog: Product[] = parts.map((name, index) => {
+  const formattedName = formatPartName(name);
+  const directPurchaseData = directPurchaseConfig[formattedName];
+  const directPurchase = Boolean(directPurchaseData);
+  const fallbackStock =
     index % 5 === 0
       ? "Bajo pedido 24–48h"
       : index % 7 === 0
       ? "Confirmar stock"
-      : "Disponible para cotización",
-  price:
-    index % 3 === 0
+      : "Disponible para cotización";
+
+  return {
+    id: index + 1,
+    name: formattedName,
+    category: categorizePart(name),
+    sku: `REP-${String(index + 1).padStart(4, "0")}`,
+    stock: directPurchase ? "Disponible para cotización" : fallbackStock,
+    price: directPurchaseData
+      ? formatPriceFromCents(directPurchaseData.priceCents)
+      : index % 3 === 0
       ? "Precio por confirmar"
       : `$${(8 + index * 1.75).toFixed(2)}`,
-  brand:
-    index % 4 === 0
-      ? "Alternativo"
-      : index % 4 === 1
-      ? "OEM equivalente"
-      : index % 4 === 2
-      ? "Premium"
-      : "Económico",
-  imageUrl: undefined,
-}));
+    brand:
+      index % 4 === 0
+        ? "Alternativo"
+        : index % 4 === 1
+        ? "OEM equivalente"
+        : index % 4 === 2
+        ? "Premium"
+        : "Económico",
+    imageUrl: undefined,
+    directPurchase,
+    compatibilityVerified: directPurchase,
+    priceCents: directPurchaseData?.priceCents,
+    shippingWeightKg: directPurchaseData?.shippingWeightKg,
+  };
+});

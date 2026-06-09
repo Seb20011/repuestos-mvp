@@ -17,3 +17,1517 @@
 [browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
 [browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (file://C:/Proyectos/repuestos-mvp/.next/dev/static/chunks/_10~j5k8._.js:1506:30)
 [browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (file://C:/Proyectos/repuestos-mvp/.next/dev/static/chunks/_10~j5k8._.js:1506:30)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+⚠ Fast Refresh had to perform a full reload when ./components/cart/CartProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./components/cart/CartProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./components/cart/CartProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./components/cart/CartProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./components/cart/CartProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./components/cart/CartProvider.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  [90m1 |[0m [36mimport[0m { [33mMessageCircle[0m, [33mSearch[0m, [33mX[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m2 |[0m [36mimport[0m { [33mMobileCatalogFilters[0m } [36mfrom[0m [32m"@/components/repuestos/MobileCatalogFilters"[0m;
+[31m[1m>[0m [90m3 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/repuestos/ProductCard"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m4 |[0m [36mimport[0m { [33mWHATSAPP_PHONE[0m } [36mfrom[0m [32m"@/lib/whatsapp"[0m;
+  [90m5 |[0m [36mimport[0m [36mtype[0m { [33mProduct[0m, [33mVehicle[0m } [36mfrom[0m [32m"@/types"[0m;
+  [90m6 |[0m
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  1 | import { MessageCircle, Search, X } from "lucide-react";
+  2 | import { MobileCatalogFilters } from "@/components/repuestos/MobileCatalogFilters";
+> 3 | import { ProductCard } from "@/components/repuestos/ProductCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { WHATSAPP_PHONE } from "@/lib/whatsapp";
+  5 | import type { Product, Vehicle } from "@/types";
+  6 |
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./components/repuestos/CatalogSection.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./components/repuestos/CatalogSection.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] Uncaught Error: ./components/repuestos/CatalogSection.tsx:3:1
+Module not found: Can't resolve '@/components/repuestos/ProductCard'
+  1 | import { MessageCircle, Search, X } from "lucide-react";
+  2 | import { MobileCatalogFilters } from "@/components/repuestos/MobileCatalogFilters";
+> 3 | import { ProductCard } from "@/components/repuestos/ProductCard";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { WHATSAPP_PHONE } from "@/lib/whatsapp";
+  5 | import type { Product, Vehicle } from "@/types";
+  6 |
+
+Import map: aliased to relative './components/repuestos/ProductCard' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./components/repuestos/CatalogSection.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/repuestos/CatalogSection.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./components/repuestos/CatalogSection.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./components/repuestos/CatalogSection.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\sebas\AppData\Local\Temp\next-panic-15f5032c2d466f464b29062648bc5da6.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29&body=Turbopack%20version%3A%20%60ee6e79b1%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0A%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A%0ACaused%20by%3A%0A-%20reading%20file%20%22C%3A%5C%5CProyectos%5C%5Crepuestos-mvp%5C%5C.codex%5C%5Cscreenshots%5C%5Cchrome-profile%5C%5CDefault%5C%5CSite%20Characteristics%20Database%5C%5CLOCK%22%0A-%20El%20proceso%20no%20tiene%20acceso%20al%20archivo%20porque%20otro%20proceso%20tiene%20bloqueada%20una%20parte%20del%20archivo.%20%28os%20error%2033%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20subscribe_issues_and_diags_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20%2AProject%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aserver_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Acreate%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20evaluate_webpack_loader%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22C%3A%5C%5CProyectos%5C%5Crepuestos-mvp%5C%5C.codex%5C%5Cscreenshots%5C%5Cchrome-profile%5C%5CDefault%5C%5CSite%20Characteristics%20Database%5C%5CLOCK%22%0A-%20El%20proceso%20no%20tiene%20acceso%20al%20archivo%20porque%20otro%20proceso%20tiene%20bloqueada%20una%20parte%20del%20archivo.%20%28os%20error%2033%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)
+[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead. (components/repuestos/HeroMechanicalBackground.tsx:369:16)

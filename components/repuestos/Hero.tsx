@@ -26,29 +26,27 @@ export function Hero({
 }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white md:min-h-[108vh]">
-      <div className="hidden md:block">
-        <HeroMechanicalBackground />
-      </div>
+      <HeroMechanicalBackground />
 
-      <div className="relative z-10 mx-auto grid max-w-7xl gap-6 px-4 py-8 md:sticky md:top-0 md:min-h-screen md:grid-cols-2 md:items-center md:gap-10 md:py-20">
-        <div className="self-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm md:mb-5">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl box-border gap-5 px-4 py-7 md:sticky md:top-0 md:min-h-screen md:grid-cols-2 md:items-center md:gap-10 md:py-20">
+        <div className="min-w-0 self-center">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold md:mb-5 md:text-sm">
             <Database className="h-4 w-4" />
             Catálogo compatible por vehículo
           </div>
 
-          <h1 className="text-4xl font-black tracking-tight md:text-6xl">
-            <span className="md:hidden">
-              Encuentra repuestos para tu vehículo
+          <h1 className="max-w-full text-[2rem] font-black leading-tight tracking-tight md:text-6xl">
+            <span className="block max-w-[21rem] md:hidden">
+              Encuentra el repuesto correcto
             </span>
             <span className="hidden md:inline">
               Encuentra repuestos por marca, modelo, año y motor.
             </span>
           </h1>
 
-          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 md:mt-6 md:text-lg md:leading-8">
+          <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-300 md:mt-6 md:text-lg md:leading-8">
             <span className="md:hidden">
-              Selecciona tu vehículo y consulta piezas compatibles.
+              Selecciona tu vehículo y busca piezas compatibles.
             </span>
             <span className="hidden md:inline">
               Busca repuestos compatibles con tu vehículo, revisa opciones

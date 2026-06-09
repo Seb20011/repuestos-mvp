@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Wrench } from "lucide-react";
+
+import { AddToCartButton } from "@/components/cart/AddToCartButton";
 import { getFallbackImageByCategory } from "@/lib/product-images";
-import {
-  createPhotoConfirmationWhatsAppLink,
-  createWhatsAppLink,
-} from "@/lib/whatsapp";
+import { canPurchaseDirectly } from "@/lib/purchase";
+import { createWhatsAppLink } from "@/lib/whatsapp";
 import type { Product, Vehicle } from "@/types";
 
 type ProductCardProps = {
@@ -31,14 +30,12 @@ function getStockBadgeClass(stock: string) {
 
 export function ProductCard({ part, vehicle }: ProductCardProps) {
   const imageSrc = part.imageUrl || getFallbackImageByCategory(part.category);
-  const photoConfirmationLink = createPhotoConfirmationWhatsAppLink(
-    part,
-    vehicle
-  );
+  const directPurchaseAvailable = canPurchaseDirectly(part);
+  const compatibilityLabel = `Para ${vehicle.brand} ${vehicle.model} ${vehicle.engine}`;
 
   return (
-    <article className="rounded-3xl bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-      <div className="relative mb-4 h-40 overflow-hidden rounded-2xl bg-slate-100">
+    <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition md:hover:-translate-y-1 md:hover:shadow-lg">
+      <div className="relative aspect-[4/3] bg-slate-50">
         <Image
           src={imageSrc}
           alt={part.name}
@@ -54,76 +51,53 @@ export function ProductCard({ part, vehicle }: ProductCardProps) {
         )}
       </div>
 
-      <div className="mb-4 flex items-start justify-between gap-3">
-        <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-100 text-slate-700">
-          <Wrench className="h-6 w-6" />
+      <div className="p-4">
+        <div className="mb-2 flex items-start justify-between gap-3">
+          <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">
+            {part.sku}
+          </p>
+          <span
+            className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-black ${getStockBadgeClass(
+              part.stock
+            )}`}
+          >
+            {part.stock}
+          </span>
         </div>
 
-        <span
-          className={`rounded-full px-3 py-1 text-xs font-bold ${getStockBadgeClass(
-            part.stock
-          )}`}
-        >
-          {part.stock}
-        </span>
-      </div>
+        <h3 className="line-clamp-2 min-h-[48px] text-base font-black leading-6 text-slate-900 md:text-lg md:leading-7">
+          {part.name}
+        </h3>
 
-      <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
-        {part.sku}
-      </p>
-
-      <h3 className="mt-2 min-h-[56px] text-lg font-black leading-7">
-        {part.name}
-      </h3>
-
-      <div className="mt-4 space-y-2 text-sm text-slate-500">
-        <p>
-          <strong className="text-slate-700">Categoría:</strong>{" "}
-          {part.category}
+        <p className="mt-2 text-sm font-bold text-slate-500">
+          {compatibilityLabel}
         </p>
-        <p>
-          <strong className="text-slate-700">Marca:</strong> {part.brand}
+
+        <p className="mt-4 text-lg font-black text-slate-950">
+          {part.price}
         </p>
-        <p>
-          <strong className="text-slate-700">Compatible:</strong>{" "}
-          {vehicle.brand} {vehicle.model} {vehicle.year} {vehicle.engine}
-        </p>
-      </div>
 
-      <div className="mt-4 flex items-start gap-2 rounded-2xl bg-slate-50 p-3 text-xs font-bold leading-5 text-slate-500">
-        <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" />
-        Confirmar compatibilidad antes de comprar.
-      </div>
+        <div className="mt-4 grid gap-2">
+          {directPurchaseAvailable ? (
+            <AddToCartButton product={part} className="w-full rounded-xl" />
+          ) : (
+            <a
+              href={createWhatsAppLink(part, vehicle)}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-11 items-center justify-center rounded-xl bg-emerald-600 px-4 text-sm font-black text-white transition hover:bg-emerald-700"
+            >
+              Confirmar compatibilidad
+            </a>
+          )}
 
-      <div className="mt-5 border-t pt-4">
-        <p className="text-lg font-black">{part.price}</p>
-
-        <div className="mt-4 grid gap-2 sm:grid-cols-2">
           <Link
             href={`/producto/${part.sku}`}
-            className="rounded-2xl border border-slate-200 px-4 py-2 text-center font-bold text-slate-700 transition hover:bg-slate-50"
+            className="inline-flex h-10 items-center justify-center rounded-xl border border-slate-200 px-4 text-sm font-black text-slate-700 transition hover:bg-slate-50"
           >
             Ver detalle
           </Link>
-
-          <a
-            href={createWhatsAppLink(part, vehicle)}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-2xl bg-emerald-600 px-4 py-2 text-center font-bold text-white transition hover:bg-emerald-700"
-          >
-            Consultar
-          </a>
         </div>
-
-        <a
-          href={photoConfirmationLink}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-3 inline-flex w-full justify-center text-sm font-bold text-emerald-700 transition hover:text-emerald-800"
-        >
-          Enviar foto por WhatsApp
-        </a>
       </div>
     </article>
   );

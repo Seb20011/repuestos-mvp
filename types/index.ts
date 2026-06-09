@@ -7,6 +7,10 @@ export type Product = {
   price: string;
   brand: string;
   imageUrl?: string;
+  directPurchase: boolean;
+  priceCents?: number;
+  compatibilityVerified: boolean;
+  shippingWeightKg?: number;
 };
 
 export type Vehicle = {

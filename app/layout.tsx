@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { CartProvider } from "@/components/cart/CartProvider";
+import { MobileBottomNav } from "@/components/mobile/MobileBottomNav";
+import { MobileCartBar } from "@/components/mobile/MobileCartBar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,7 +31,13 @@ export default function RootLayout({
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <CartProvider>
+          {children}
+          <MobileCartBar />
+          <MobileBottomNav />
+        </CartProvider>
+      </body>
     </html>
   );
 }

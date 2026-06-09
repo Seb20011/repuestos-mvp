@@ -67,7 +67,7 @@ export function MobileCatalogFilters({
         <Button
           variant="outline"
           className={cn(
-            "h-10 rounded-2xl border-slate-200 bg-white px-4 text-sm font-black text-slate-700 shadow-sm hover:bg-slate-50",
+            "h-10 rounded-xl border-slate-200 bg-white px-4 text-sm font-black text-slate-700 hover:bg-slate-50",
             className
           )}
         >
@@ -78,24 +78,39 @@ export function MobileCatalogFilters({
 
       <SheetContent
         side="bottom"
-        className="max-h-[90vh] overflow-y-auto rounded-t-3xl border-slate-200 bg-white p-0 text-slate-900"
+        className="max-h-[90vh] overflow-y-auto rounded-t-2xl border-slate-200 bg-white p-0 text-slate-900"
       >
         <SheetHeader className="px-5 pb-2 pt-5 text-left">
           <SheetTitle className="text-xl font-black">
             Filtros del catálogo
           </SheetTitle>
           <SheetDescription>
-            Ajusta disponibilidad, tipo de marca y categoría.
+            Ajusta categoría, disponibilidad y tipo de marca.
           </SheetDescription>
         </SheetHeader>
 
         <div className="grid gap-4 px-5 pb-5">
           <label>
+            <span className="mb-2 block text-sm font-bold">Categoría</span>
+            <select
+              className="w-full rounded-xl border border-slate-200 bg-white p-3 text-sm font-bold text-slate-800 outline-none focus:border-emerald-500"
+              value={selectedCategory}
+              onChange={(event) => setCategory(event.target.value)}
+            >
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label>
             <span className="mb-2 block text-sm font-bold">
               Disponibilidad
             </span>
             <select
-              className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-sm font-bold text-slate-800 outline-none focus:border-emerald-500"
+              className="w-full rounded-xl border border-slate-200 bg-white p-3 text-sm font-bold text-slate-800 outline-none focus:border-emerald-500"
               value={selectedStock}
               onChange={(event) => setStockFilter(event.target.value)}
             >
@@ -112,7 +127,7 @@ export function MobileCatalogFilters({
               Tipo de marca
             </span>
             <select
-              className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-sm font-bold text-slate-800 outline-none focus:border-emerald-500"
+              className="w-full rounded-xl border border-slate-200 bg-white p-3 text-sm font-bold text-slate-800 outline-none focus:border-emerald-500"
               value={selectedBrand}
               onChange={(event) => setBrandFilter(event.target.value)}
             >
@@ -124,33 +139,18 @@ export function MobileCatalogFilters({
             </select>
           </label>
 
-          <label>
-            <span className="mb-2 block text-sm font-bold">Categoría</span>
-            <select
-              className="w-full rounded-2xl border border-slate-200 bg-white p-3 text-sm font-bold text-slate-800 outline-none focus:border-emerald-500"
-              value={selectedCategory}
-              onChange={(event) => setCategory(event.target.value)}
-            >
-              {categories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          </label>
-
           <div className="grid grid-cols-2 gap-3 pt-1">
             <Button
               type="button"
               variant="outline"
-              className="h-11 rounded-2xl border-slate-200 bg-white font-bold text-slate-700"
+              className="h-11 rounded-xl border-slate-200 bg-white font-bold text-slate-700"
               onClick={clearFilters}
             >
               Limpiar filtros
             </Button>
 
             <SheetClose asChild>
-              <Button className="h-11 rounded-2xl bg-emerald-600 font-bold text-white hover:bg-emerald-700">
+              <Button className="h-11 rounded-xl bg-emerald-600 font-bold text-white hover:bg-emerald-700">
                 Aplicar filtros
               </Button>
             </SheetClose>

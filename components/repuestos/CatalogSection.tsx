@@ -1,6 +1,7 @@
-import { Filter, Search } from "lucide-react";
+import { MessageCircle, Search, X } from "lucide-react";
 import { MobileCatalogFilters } from "@/components/repuestos/MobileCatalogFilters";
 import { ProductCard } from "@/components/repuestos/ProductCard";
+import { WHATSAPP_PHONE } from "@/lib/whatsapp";
 import type { Product, Vehicle } from "@/types";
 
 type CatalogSectionProps = {
@@ -37,12 +38,25 @@ export function CatalogSection({
   const mobileCategories = ["Todas", "Mantenimiento", "Frenos"].filter(
     (category) => categories.includes(category)
   );
+  const emptyMessage = encodeURIComponent(
+    "Hola, no encontré el repuesto que necesito en el catálogo. ¿Me pueden ayudar a cotizarlo?"
+  );
+
+  const clearCatalogFilters = () => {
+    setQuery("");
+    setCategory("Todas");
+    setStockFilter("Todos");
+    setBrandFilter("Todas");
+  };
 
   return (
-    <section id="catalogo" className="mx-auto max-w-7xl px-4 py-6 md:py-12">
-      <div className="mb-4 flex flex-col justify-between gap-3 md:mb-6 md:flex-row md:items-end">
+    <section
+      id="catalogo"
+      className="mx-auto w-full max-w-7xl box-border px-4 py-5 md:py-12"
+    >
+      <div className="mb-3 flex flex-col justify-between gap-2 md:mb-6 md:flex-row md:items-end">
         <div>
-          <p className="mb-2 text-sm font-bold uppercase tracking-widest text-emerald-600">
+          <p className="mb-1 text-xs font-bold uppercase tracking-widest text-emerald-600 md:mb-2 md:text-sm">
             Catálogo
           </p>
 
@@ -50,7 +64,7 @@ export function CatalogSection({
             60 repuestos de alta rotación
           </h2>
 
-          <h2 className="text-2xl font-black tracking-tight md:hidden">
+          <h2 className="text-2xl font-black tracking-tight leading-tight md:hidden">
             {filtered.length} repuestos disponibles
           </h2>
 
@@ -62,17 +76,27 @@ export function CatalogSection({
       </div>
 
       <div className="mb-3 grid gap-3 md:mb-6 md:grid-cols-[minmax(0,1.4fr)_minmax(180px,0.8fr)_minmax(180px,0.8fr)]">
-        <div className="flex items-center gap-2 rounded-2xl bg-white p-2 shadow-sm">
-          <Search className="ml-2 h-5 w-5 text-slate-400" />
+        <div className="flex h-11 items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 md:h-auto md:rounded-2xl md:px-4 md:py-3">
+          <Search className="h-4 w-4 shrink-0 text-slate-400 md:h-5 md:w-5" />
           <input
-            className="w-full border-0 bg-transparent px-2 py-2 outline-none"
-            placeholder="Buscar sensor, filtro, freno..."
+            className="min-w-0 flex-1 border-0 bg-transparent text-sm font-medium outline-none placeholder:text-slate-400 md:text-base"
+            placeholder="Buscar filtro, sensor, freno..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
+          {query && (
+            <button
+              type="button"
+              className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-slate-400 transition hover:bg-slate-100 hover:text-slate-700"
+              onClick={() => setQuery("")}
+              aria-label="Limpiar búsqueda"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          )}
         </div>
 
-        <label className="hidden rounded-2xl bg-white px-4 py-3 shadow-sm md:block">
+        <label className="hidden rounded-2xl border border-slate-200 bg-white px-4 py-3 md:block">
           <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
             Disponibilidad
           </span>
@@ -89,7 +113,7 @@ export function CatalogSection({
           </select>
         </label>
 
-        <label className="hidden rounded-2xl bg-white px-4 py-3 shadow-sm md:block">
+        <label className="hidden rounded-2xl border border-slate-200 bg-white px-4 py-3 md:block">
           <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
             Tipo de marca
           </span>
@@ -131,10 +155,10 @@ export function CatalogSection({
             <button
               key={cat}
               onClick={() => setCategory(cat)}
-              className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-bold transition ${
+              className={`h-9 whitespace-nowrap rounded-full px-3 text-sm font-bold transition ${
                 selectedCategory === cat
                   ? "bg-slate-900 text-white"
-                  : "bg-white text-slate-600 shadow-sm hover:bg-slate-100"
+                  : "bg-white text-slate-600 ring-1 ring-slate-200 hover:bg-slate-100"
               }`}
             >
               {cat}
@@ -176,20 +200,42 @@ export function CatalogSection({
       </div>
 
       <div className="mb-5 hidden items-center gap-2 text-sm text-slate-500 md:flex">
-        <Filter className="h-4 w-4" />
         {filtered.length} resultados para {vehicle.brand} {vehicle.model}{" "}
         {vehicle.year} {vehicle.engine}
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
         {filtered.length > 0 ? (
           filtered.map((part) => (
             <ProductCard key={part.id} part={part} vehicle={vehicle} />
           ))
         ) : (
-          <div className="rounded-3xl bg-white p-6 text-sm leading-6 text-slate-500 shadow-sm md:col-span-2 lg:col-span-3">
-            No encontramos productos con esos filtros. Prueba otra categoría,
-            disponibilidad o tipo de marca.
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center md:col-span-2 md:p-8 lg:col-span-3">
+            <h3 className="text-lg font-black text-slate-900">
+              No encontramos repuestos
+            </h3>
+            <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-slate-500">
+              Prueba otra búsqueda o limpia los filtros.
+            </p>
+            <div className="mt-5 grid gap-2 sm:mx-auto sm:max-w-md sm:grid-cols-2">
+              <button
+                type="button"
+                className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-black text-slate-700 transition hover:bg-slate-50"
+                onClick={clearCatalogFilters}
+              >
+                Limpiar filtros
+              </button>
+
+              <a
+                href={`https://wa.me/${WHATSAPP_PHONE}?text=${emptyMessage}`}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-black text-white transition hover:bg-emerald-700"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Consultar por WhatsApp
+              </a>
+            </div>
           </div>
         )}
       </div>

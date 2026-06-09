@@ -25,42 +25,45 @@ const steps = [
 
 export function HowToBuy() {
   return (
-    <section id="como-comprar" className="bg-white py-12">
-      <div className="mx-auto max-w-7xl px-4">
+    <section id="como-comprar" className="bg-white py-6 md:py-12">
+      <div className="mx-auto w-full max-w-7xl box-border px-4">
         <div className="max-w-3xl">
-          <p className="mb-2 text-sm font-bold uppercase tracking-widest text-emerald-600">
+          <p className="mb-1 text-xs font-bold uppercase tracking-widest text-emerald-600 md:mb-2 md:text-sm">
             Proceso de compra
           </p>
-          <h2 className="text-3xl font-black tracking-tight md:text-4xl">
+          <h2 className="text-2xl font-black tracking-tight md:text-4xl">
             Cómo comprar
           </h2>
-          <p className="mt-3 text-slate-500">
+          <p className="mt-2 text-sm leading-6 text-slate-500 md:mt-3 md:text-base">
             El proceso está pensado para evitar errores de compatibilidad y
             confirmar disponibilidad antes de pagar.
           </p>
         </div>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-4 grid gap-3 md:mt-8 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
           {steps.map((step, index) => {
             const Icon = step.icon;
 
             return (
               <article
                 key={step.title}
-                className="rounded-3xl border border-slate-100 bg-slate-50 p-5 shadow-sm"
+                className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50 p-4 md:block md:rounded-3xl md:p-5 md:shadow-sm"
               >
-                <div className="mb-5 flex items-center justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-emerald-600 shadow-sm">
-                    <Icon className="h-6 w-6" />
+                <div className="flex items-center justify-between md:mb-5">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-emerald-600 md:h-12 md:w-12 md:rounded-2xl md:shadow-sm">
+                    <Icon className="h-5 w-5 md:h-6 md:w-6" />
                   </div>
-                  <span className="text-sm font-black text-slate-300">
+                  <span className="hidden text-sm font-black text-slate-300 md:block">
                     0{index + 1}
                   </span>
                 </div>
-                <h3 className="font-black text-slate-900">{step.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-500">
-                  {step.description}
-                </p>
+
+                <div className="min-w-0">
+                  <h3 className="font-black text-slate-900">{step.title}</h3>
+                  <p className="mt-1 text-sm leading-5 text-slate-500 md:mt-2 md:leading-6">
+                    {step.description}
+                  </p>
+                </div>
               </article>
             );
           })}
